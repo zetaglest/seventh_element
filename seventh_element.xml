@@ -1,12 +1,12 @@
-<?xml version="1.0" standalone="yes" ?> 
+<?xml version="1.0" standalone="yes" ?>
 <scenario>
 	<difficulty value="4"/>
 	<players>
 		<player control="human" faction="magic" team="1"/>
-		<player control="cpu" faction="magic" team="2"/>	
-		<player control="cpu" faction="tech" team="2"/>	
-		<player control="cpu-mega" faction="magic" team="2"/>	
-		<player control="cpu" faction="magic" team="11"/>
+		<player control="cpu" faction="magic" team="2"/>
+		<player control="cpu" faction="tech" team="2"/>
+		<player control="cpu-mega" faction="magic" team="2"/>
+		<player control="cpu" faction="magic" team="9"/>
 		<player control="cpu-mega" faction="magic" team="1"/>
 
 	</players>
@@ -15,7 +15,7 @@
 	<tech-tree value="megarealms"/>
 	<default-resources value="false"/>
 	<default-units value="false"/>
-	<default-victory-conditions value="false"/>	
+	<default-victory-conditions value="false"/>
 	<fog-of-war value="true"/>
 <scripts>
 <startup>
@@ -1047,8 +1047,8 @@ giveAttackCommand(snake, archmage)
 			end
 
 </unitDied>
-<cellTriggerEvent>   
-	if triggeredCellEventId() == cell_event1 then 
+<cellTriggerEvent>
+	if triggeredCellEventId() == cell_event1 then
 showMessage('m5', 'The Seventh Element')
 showMessage('m6', 'The Seventh Element')
 showMessage('m7', 'The Seventh Element')
@@ -1086,7 +1086,7 @@ createUnitNoSpacing('long_swordsman', 2, {74, 108})
 		unregisterCellTriggerEvent(cell_event1);
 	  end
 
-	if triggeredCellEventId() == cell_event2 then 
+	if triggeredCellEventId() == cell_event2 then
 togglePauseGame(1);
 setPlayerAsWinner(0)
 setPlayerAsWinner(4)
@@ -1100,27 +1100,27 @@ endGame()
 <unitCreatedOfType type="archmage">
 			if unitCountOfType(0, 'archmage')>=1 then
 			archmage= lastCreatedUnit()
-	end	
-	
+	end
+
 </unitCreatedOfType>
 
 <unitCreatedOfType type="archmage_">
 			if unitCountOfType(0, 'archmage_')>=1 then
 			archmage= lastCreatedUnit()
-	end	
-	
+	end
+
 </unitCreatedOfType>
 <unitCreatedOfType type="archmage__">
 			if unitCountOfType(0, 'archmage__')>=1 then
 			archmage= lastCreatedUnit()
-	end	
-	
+	end
+
 </unitCreatedOfType>
 <unitCreatedOfType type="titan_">
 			if unitCountOfType(0, 'titan_')>=1 then
 			titan= lastCreatedUnit()
-	end	
-	
+	end
+
 </unitCreatedOfType>
 
 
